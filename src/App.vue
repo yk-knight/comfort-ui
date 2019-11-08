@@ -1,13 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>Comfort Ui</h1>
+    <cf-button @click="handleClick">舒适按钮</cf-button>
   </div>
 </template>
 
 <script>
+import CfButton from './packages/button/src/button'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    CfButton
+  },
+  methods:{
+    handleClick() {
+      alert("这是第一个按钮")
+    }
+  }
 }
 </script>
 
