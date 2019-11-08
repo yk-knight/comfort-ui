@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import CfButton from './packages/button/src/button'
+import CfButton from '../packages/button/src/button'
 
 export default {
   name: 'App',

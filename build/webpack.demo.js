@@ -11,6 +11,7 @@ function resolve (dir) {
 
 
 module.exports = {
+    mode: 'production',
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './examples/index.js'

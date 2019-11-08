@@ -1,16 +1,27 @@
 {
-  "name": "comfort-ui",
-  "version": "1.0.0",
+  "name": "comfort-ui2",
+  "version": "1.0.1",
   "description": "A Vue.js project for UI",
   "author": "eric.yao <839169653@qq.com>",
-  "private": true,
+  "main":"dist/comfort-ui.js",
+  "private": false,
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/yk-knight/comfort-ui"
+  },
+  "keywords":[
+    "comfort",
+    "vue",
+    "comfort-ui"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "demo": "webpack-dev-server --inline --progress --config build/webpack.demo.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "build": "node build/build.js"
+    "build": "webpack --display-error-details --config build/webpack.conf.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
