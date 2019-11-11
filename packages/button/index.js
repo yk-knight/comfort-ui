@@ -1,11 +1,11 @@
-import CFButtom from './src/button';
+import CfButton from './src/button';
 
-CFButtom.install = function(Vue) {
-    Vue.component(CFButtom.name,CFButtom);
+CfButton.install = function(Vue) {
+    Vue.component(CfButton.name,CfButton);
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(CFButtom)
+    window.Vue.use(CfButton)
 }
 
-export default CFButtom;
+export default CfButton;
