@@ -33,7 +33,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '1.0.0',
+  version: '{{version}}',
   install,
 {{exportList}}
 };`;
@@ -64,7 +64,9 @@ ComponentNames.forEach(name => {
 var mainTemplate = render(MAIN_TEMPLATE,{
     include: includeComponentTemplate.join(endOfLine),
     install: installTemplate.join(',' + endOfLine),
+    version: require('../../package.json').version,
     exportList: exportListTemplate.join(',' + endOfLine)
+    
 })
 
 fs.writeFileSync(OUTPUT_PATH, mainTemplate)
