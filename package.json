@@ -1,6 +1,6 @@
 {
   "name": "comfort-ui2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vue.js project for UI",
   "author": "eric.yao <839169653@qq.com>",
   "main":"dist/comfort-ui.js",

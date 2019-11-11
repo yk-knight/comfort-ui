@@ -1,7 +1,7 @@
 import CFButtom from './src/button';
 
 CFButtom.install = function(Vue) {
-    Vue.comonent(CFButtom.name,CFButtom);
+    Vue.component(CFButtom.name,CFButtom);
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

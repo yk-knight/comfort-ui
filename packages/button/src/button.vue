@@ -16,7 +16,7 @@
 
 <script>
     export default {
-        name: 'CFButtom',
+        name: 'CFButton',
         props:{
             size: String,
             disabled: Boolean,

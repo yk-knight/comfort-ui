@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     publicPath: '/dist/',
-    filename: 'index.js',
+    filename: 'comfort-ui.js',
     library:'COMFORT',
     libraryTarget:'umd',
     umdNamedDefine: true,
