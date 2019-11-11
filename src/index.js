@@ -4,8 +4,8 @@ import Button from '../packages/button/index.js';
 import ButtonGroup from '../packages/button-group/index.js';
 
 const components = [
-    Button,
-    ButtonGroup
+  Button,
+  ButtonGroup
 ];
   
 const install = function(Vue) {
@@ -16,12 +16,12 @@ const install = function(Vue) {
 
 /* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
+    install(window.Vue);
 }
 
 export default {
-    version: '1.0.0',
-    install,
-    Button,
-    ButtonGroup
+  version: '1.0.0',
+  install,
+  Button,
+  ButtonGroup
 };
