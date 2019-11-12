@@ -22,7 +22,10 @@
     "build": "webpack --display-error-details --config build/webpack.conf.js"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "json-templater": "^1.2.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "uppercamelcase": "^3.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

@@ -1,13 +1,26 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+/**
+ *  created by 2019-11-12
+**/
+import 'babel-polyfill';
+import Router from 'vue-router';
 import Vue from 'vue'
 import App from './App'
 
+Vue.use(Router);
 Vue.config.productionTip = false
+
+const router = new Router({
+  routes: [
+    {
+      path: '/button',
+      component: (resolve) => require(['./view/button.vue'], resolve)
+    }
+  ]
+})
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  components: { App },
-  template: '<App/>'
+  router:router,
+  render: h => h(App)
 })

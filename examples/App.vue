@@ -1,7 +1,26 @@
 <template>
   <div id="app">
-    <h1>Comfort Ui</h1>
-    <cf-button @click="handleClick">舒适按钮</cf-button>
+    <div class="web-view">
+
+    </div>
+    <!-- website header -->
+    <div class="header">
+      <div class="logo">Comfort-UI</div>
+      <div class="tabs">
+        <router-link to="">文档</router-link>
+        <router-link to="">示例</router-link>
+      </div>
+    </div>
+    <div class="nav-list">
+      <nav>
+        <ul>
+          <li>指南</li>
+          <li>组件</li>
+          <li><router-link to="/button">按钮</router-link></li>
+        </ul>
+      </nav>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -21,13 +40,32 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+  @import "../src/styles/index.styl"
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
 }
-</style>
+.web-view{
+  height: 100%;
+  box-sizing: border-box;
+  background: red;
+  padding-top:60px;
+}
+.header {
+  display:flex;
+  height:60px;
+  width:100%;
+  background-color:#ccc;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  .logo {
+    font-size:22px;
+  }
+}
+</style>>
+
