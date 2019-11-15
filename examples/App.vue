@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div class="web-view">
-
-    </div>
     <!-- website header -->
     <div class="header">
       <div class="logo">Comfort-UI</div>
@@ -11,26 +8,23 @@
         <router-link to="">示例</router-link>
       </div>
     </div>
-    <div class="nav-list">
-      <nav>
-        <ul>
-          <li>指南</li>
-          <li>组件</li>
-          <li><router-link to="/button">按钮</router-link></li>
-        </ul>
-      </nav>
-    </div>
-    <router-view></router-view>
+    <div class="web-view">
+      <nav-slide></nav-slide>
+      <div class="container">
+        <router-view></router-view>
+      </div>
+  </div>
+    
+    
   </div>
 </template>
 
 <script>
-import CfButton from '../packages/button/src/button'
-
+import NavSlide from './components/nav.vue'
 export default {
   name: 'App',
   components:{
-    CfButton
+    NavSlide
   },
   methods:{
     handleClick() {
@@ -51,21 +45,34 @@ export default {
 .web-view{
   height: 100%;
   box-sizing: border-box;
-  background: red;
+  background: #eee;
   padding-top:60px;
+  display:flex;
+  justify-content:space-between;
 }
 .header {
   display:flex;
+  padding:0 30px;
+  justify-content:space-between;
+  color:#FFF;
   height:60px;
+  line-height: 60px;
   width:100%;
-  background-color:#ccc;
+  background-color:#333;
   position:fixed;
   top:0;
   left:0;
   right:0;
+  a{ color:#FFF;}
   .logo {
     font-size:22px;
   }
+}
+
+.container{
+  width:82%;
+  box-sizing: border-box;
+  padding:30px 50px;
 }
 </style>>
 

@@ -4,9 +4,12 @@
         @click="handleClick"
         :disabled="btnDisabled"
         :class="[
+            type ? 'cf-button-' + type : '',
             buttonSize ? 'cf-button--' + buttonSize : '',
             {
-                'is-circle':circle
+                'is-plain': plain,
+                'is-round': round,
+                'is-circle': circle
             }
             
         ]">
@@ -18,7 +21,12 @@
     export default {
         name: 'CfButton',
         props:{
+            type:{
+               
+            },
             size: String,
+            plain: Boolean,
+            round: Boolean,
             disabled: Boolean,
             circle: Boolean
         },
