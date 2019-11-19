@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="com-view">
         <h2>Button 按钮</h2>
         
         <h3>示例</h3>
@@ -10,16 +10,16 @@
                 <div class="butRow">
                     <cf-button>默认按钮</cf-button>
                     <cf-button type="primary">默认按钮</cf-button>
-                    <cf-button type="submit">默认按钮</cf-button>
-                    <cf-button type="warning">默认按钮</cf-button>
-                    <cf-button type="danger">默认按钮</cf-button>
+                    <cf-button type="submit">确认按钮</cf-button>
+                    <cf-button type="warning">警告按钮</cf-button>
+                    <cf-button type="danger">错误按钮</cf-button>
                 </div>
                 <div class="butRow">
                     <cf-button round>默认按钮</cf-button>
                     <cf-button type="primary" round>默认按钮</cf-button>
-                    <cf-button type="submit" round>默认按钮</cf-button>
-                    <cf-button type="warning" round>默认按钮</cf-button>
-                    <cf-button type="danger" round>默认按钮</cf-button>
+                    <cf-button type="submit" round>确认按钮</cf-button>
+                    <cf-button type="warning" round>警告按钮</cf-button>
+                    <cf-button type="danger" round>错误按钮</cf-button>
                 </div>
 
             </div>

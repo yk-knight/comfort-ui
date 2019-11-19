@@ -10,9 +10,12 @@
             <li class="nav-li">
                 <h3>组件</h3>
                 <ul>
-                    <li class="nav-li">
-                        <router-link to="/button">Button 按钮</router-link>
-                    </li>
+                    <li class="nav-li"><router-link to="/button">Button 按钮</router-link></li>
+                    <li class="nav-li"><router-link to="/input">Input 输入框</router-link></li>
+                    <li class="nav-li"><router-link to="/select">Select 选择器</router-link></li>
+                    <li class="nav-li"><router-link to="/radio">Radio 单选框</router-link></li>
+                    <li class="nav-li"><router-link to="/checkbox">Checkbox 多选框</router-link></li>
+                    <li class="nav-li"><router-link to="/table">Table 表格</router-link></li>
                 </ul>
             </li>
         </ul>

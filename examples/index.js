@@ -14,6 +14,10 @@ const router = new Router({
     {
       path: '/button',
       component: (resolve) => require(['./view/button.vue'], resolve)
+    },
+    {
+      path: '/input',
+      component: (resolve) => require(['./view/input.vue'], resolve)
     }
   ]
 })
