@@ -15,13 +15,19 @@
                     <cf-button type="danger">错误按钮</cf-button>
                 </div>
                 <div class="butRow">
-                    <cf-button round>默认按钮</cf-button>
-                    <cf-button type="primary" round>默认按钮</cf-button>
+                    <cf-button round>圆形按钮</cf-button>
+                    <cf-button type="primary" round>圆形按钮</cf-button>
                     <cf-button type="submit" round>确认按钮</cf-button>
                     <cf-button type="warning" round>警告按钮</cf-button>
                     <cf-button type="danger" round>错误按钮</cf-button>
                 </div>
-
+                <div class="butRow">
+                    <cf-button plain>线条按钮</cf-button>
+                    <cf-button type="primary" plain>线条按钮</cf-button>
+                    <cf-button type="submit" plain>确认按钮</cf-button>
+                    <cf-button type="warning" plain>警告按钮</cf-button>
+                    <cf-button type="danger" plain>错误按钮</cf-button>
+                </div>
             </div>
         </div>
     </div>

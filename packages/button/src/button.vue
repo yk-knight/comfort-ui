@@ -1,3 +1,14 @@
+<!--> 
+    组件名称：按钮组件
+    属性 Attributes{
+        type - 类型 - string - primary/success/warning/danger - 默认值：无
+        size - 尺寸 - string - 
+        plain - 是否朴素按钮 - string
+        round - 是否圆形按钮 - string
+        disabled - 是否禁用 - string  
+    }
+        
+<-->
 <template>
     <button
         class="cf-button" 
@@ -8,8 +19,7 @@
             buttonSize ? 'cf-button--' + buttonSize : '',
             {
                 'is-plain': plain,
-                'is-round': round,
-                'is-circle': circle
+                'is-round': round
             }
             
         ]">
@@ -27,8 +37,7 @@
             size: String,
             plain: Boolean,
             round: Boolean,
-            disabled: Boolean,
-            circle: Boolean
+            disabled: Boolean
         },
         computed: {
             buttonSize() {

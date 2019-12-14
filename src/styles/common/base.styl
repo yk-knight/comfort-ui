@@ -1,4 +1,5 @@
 @import "normalize";
+@import "commonStyle";
 
 * {
     box-sizing: border-box;
@@ -14,10 +15,10 @@ body{
     height: 100%;
 }
 body {
-    font-family: @font-family;
-    font-size: @font-size-base;
+    font-family: $font-family;
+    font-size: $font-size;
     line-height: @line-height-base;
-    color: @text-color;
+    color: $font-color;
     background-color: @body-background;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -78,3 +79,5 @@ samp {
 ul,li{
     padding:0; margin:0; list-style:none
 }
+
+

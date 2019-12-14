@@ -7,8 +7,11 @@
         <h5>基础用法</h5>
         <div>
             <div class="exp-box">
-                <div class="butRow">
+                <div class="view-row">
                     <cf-input></cf-input>
+                </div>
+                <div class="view-row">
+                    <cf-input :disabled = 'true'></cf-input>
                 </div>
             </div>
         </div>
@@ -31,11 +34,10 @@ export default {
     border:solid 1px #ccc;
     background:#FFF;
     padding:30px 25px;
-    button{
-        margin-right:20px;
-    }
-    .butRow{
+    .view-row{
         margin-bottom: 20px;
+        margin-right:20px;
+        width:180px;
     }
 }
 </style>
