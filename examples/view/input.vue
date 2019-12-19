@@ -8,7 +8,8 @@
         <div>
             <div class="exp-box">
                 <div class="view-row">
-                    <cf-input></cf-input>
+                    <cf-input v-model="test"></cf-input>
+                    {{test}}
                 </div>
                 <div class="view-row">
                     <cf-input :disabled = 'true'></cf-input>
@@ -22,6 +23,11 @@
 import CfInput from '../../packages/input/src/input'
 
 export default {
+    data(){
+        return {
+            test:"kkk"
+        }
+    },
     components:{
         CfInput
     }
