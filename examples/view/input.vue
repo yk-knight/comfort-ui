@@ -8,9 +8,14 @@
         <div>
             <div class="exp-box">
                 <div class="view-row">
-                    <cf-input v-model="test"></cf-input>
-                    {{test}}
+                    <cf-formItem label="用户名">
+                        <cf-input type="text" v-model="userModel.username"></cf-input>
+                    </cf-formItem>
+                    <cf-formItem label="密码">
+                        <cf-input type="password" v-model="userModel.password" placeholder="abc"></cf-input>
+                    </cf-formItem>
                 </div>
+                {{userModel}}
                 <div class="view-row">
                     <cf-input :disabled = 'true'></cf-input>
                 </div>
@@ -21,15 +26,19 @@
 
 <script>
 import CfInput from '../../packages/input/src/input'
+import CfFormItem from '../../packages/form/src/formItem'
 
 export default {
     data(){
         return {
-            test:"kkk"
+            userModel:{ username:'', password:'' },
+            rules:[
+
+            ]
         }
     },
     components:{
-        CfInput
+        CfInput,CfFormItem
     }
 }
 </script>

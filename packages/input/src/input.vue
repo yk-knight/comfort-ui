@@ -3,7 +3,7 @@
 
         <template v-if="type != 'textarea'">
 
-            <input :disabled="disabled" :value="currentValue" @input="onInput" class="cf-input-base" type="text" placeholder="请输入内容">
+            <input v-bind="$attrs" :disabled="disabled" :value="value" @input="onInput" :type=type class="cf-input-base" />
 
             <!-- 后置元素 -->
             <i class="cf-icon"
@@ -25,14 +25,18 @@
 
 <script>
     export default {
-        name: 'CfButton',
+        name: 'CfInput',
+        inheritAttrs:false,
         data() {
             return {
                 currentValue:this.value
             }
         },
         props:{
-            value:[String,Number],
+            value:{
+                type:String,
+                default:''
+            },
             type:{
                type:String,
                default:'text'
